@@ -195,7 +195,7 @@ public class HuffmanTree  implements BinaryTree<HTNode> {
 
 UML 类图：
 
-<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image003.png" alt="img" style="zoom: 50%; display :block; margin :0 auto;"/>
+<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image003.png" alt="img" style="width: 300px"/>
 
 以下是 UML 图中有关数据和方法的详细说明：
 
