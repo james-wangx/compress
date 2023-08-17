@@ -1,8 +1,3 @@
-<style>
-    img {
-        max-height: 450px;
-    }
-</style>
 # compress - 哈夫曼编码实现文件压缩和解压
 
 
@@ -158,7 +153,7 @@ public class HuffmanTree  implements BinaryTree<HTNode> {
 
 
 ### 2.2 项目类图
-<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image002.png" alt="" style="zoom: 50%; display :block; margin :0 auto;"/>
+<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image002.png" alt=""/>
 
 
 
@@ -232,7 +227,7 @@ UML 类图：
 
 BinaryTree&lt;T> 二叉树接口通过使用 Consumer&lt;T> 函数式接口可以实现函数式编程，通过传递函数实现遍历时的自定义操作。
 
-<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image004.png" alt="img" style="zoom:50%; display :block; margin :0 auto; " />
+<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image004.png" alt="img" style="width: 400px" />
 
 以下是 UML 图中有关数据和方法的详细说明：
 
@@ -254,7 +249,7 @@ HTNode 哈弗曼节点类通过继承 Node 节点抽象类实现一些属性和�
 
 UML 类图：
 
-<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/image-20230626142847091.png" style="zoom: 50%; display :block; margin :0 auto;"  alt="img"/>
+<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/image-20230626142847091.png" style="width: 600px"  alt="img"/>
 
 以下是 UML 图中有关数据和方法的详细说明：
 
@@ -280,7 +275,7 @@ HuffmanTree 哈夫曼树类通过实现 BinaryTree&lt;T> 接口规定的方法�
 
 UML 类图：
 
-<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image006.png" alt="img" style="zoom: 50%; display :block; margin :0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image006.png" alt="img" />
 
 以下是 UML 图中有关数据和方法的详细说明：
 
@@ -296,7 +291,7 @@ UML 类图：
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image007.png"  alt="" style="zoom: 50%; display :block; margin :0 auto;"/>
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image007.png"  alt=""/>
 
     - isEmpty() 通过判断该树的根节点是否为空，来判断该树是否为空
 
@@ -330,31 +325,31 @@ UML 类图：
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image012.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image012.png" alt="img" style="width: 400px" />
 
     - inorderTraverse(Consumer&lt;HTNode>)为方便调用，用重载可以实现只传递一个自定义函数便可完成遍历，指明需要传递的参数 node 就是该树的根节点 root，表示从根节点开始遍历。
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image013.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image013.png" alt="img" style="width: 400px" />
 
     - postorderTraverse(Consumer&lt;HTNode>)为方便调用，用重载可以实现只传递一个自定义函数便可完成遍历，指明需要传递的参数 node 就是该树的根节点 root，表示从根节点开始遍历。
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image014.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image014.png" alt="img" style="width: 400px" />
 
     - calcPath() 遍历节点（三种遍历方式都可以，默认使用先序遍历），若该节点不是根节点，计算该节点的 path 属性为它父节点的 path 属性 + 自己的 path 属性。如果该节点是叶子节点，则将该节点加入 leafList 叶子节点列表中。
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image015.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image015.png" alt="img"  />
 
     - getLeafList() 返回该树的 leafList 属性，来获取该树的叶子节点列表  forEachLeaf(Consumer&lt;HTNode>) 遍历每个叶子节点，通过传递函数实现遍历时的自定义操作
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image016.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image016.png" alt="img" style="width: 500px" />
 
 ### 3.5 HuffmanCode 类
 
@@ -362,7 +357,7 @@ HuffmanCode 使用到的哈夫曼树存储在  HuffmanTree 类中。使用 HashM
 
 UML 类图：
 
-<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image017.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image017.png" alt="img"  />
 以下是 UML 图中有关数据和方法的详细说明：
 
 - 成员变量
@@ -377,49 +372,49 @@ UML 类图：
 
       UML 顺序图如下所示：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image018.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image018.png" alt="img" style="width: 600px" />
 
     - createCodeMap(List&lt;HTNode>) 根据叶子节点列表创建编码本，遍历叶子节点列表，讲节点的 value  属性作为 key，path 属性作为 value 存入 codeMap 中
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image019.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image019.png" alt="img" style="width: 600px" />
 
     - getCode(byte[]) 遍历原始文本的字节数组，按照编码本将其转换为二进制的字符串。接下来对该字符串重新编码：将该字符串的长度  + 7 再模 8 得到最小的字节数。以该字节数为大小创建一个字节数组，也是编码数组。同时遍历该字节数组和字符串片段（8 个字符为一个片段），字符串索引每遍历一次 + 8，编码数组索引每遍历一次  + 1。将字符串索引 + 8 判断该字节是否为最后一个字符串片段，如果是，则不做转换处理，直接放入编码本，key 为 null，value 为该字符串片段。如果不是最后一个，则获取本个字符串片段，然后将其转为字节存到编码数组中。
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image020.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image020.png" alt="img"  />
 
     - code(byte[]) 传递字节数组进行编码，先计算字节的权重，再根据权重创建哈夫曼树，然后生成编码本，最后计算编码。
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image021.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image021.png" alt="img" style="width: 600px" />
 
     - code(String) 对 code(bytes[]) 的重载，先将字符串转为字节数组，再调用 code(bytes[])
 
       UML 图如下所示：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image022.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image022.png" alt="img" style="width: 400px" />
 
     - getBinaryString(byte[]) 创建一个StringBuilder对象用于字符串拼接。将字节数组转为二进制字符串，遍历编码数组，将编码和  0x100 进行按位或运算得到长度为 9 位的字符串。根据编码数组的长度和当前索引判断当前编码是否为最后一个，如果是，则不需要转换，直接从编码本中将对应的字符串取出（key 为 null） 加入拼接字符串后面。如果不是最后一个编码，则取字符串的后  8 位加入拼接字符串后面。遍历完后返回拼接字符串。
 
       UML 顺序图如下所示：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image023.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image023.png" alt="img"  />
 
     - getContent(String) 将编码的二进制字符串转为原始文本。创建两个StringBuilder对象，一个用于字符串片段的拼接，一个用于拼接整体原始字符串。根据编码表生成解码表，具体做法就是将编码表的 key 转为解码表的 value，编码表的 value 转为解码表的 key。遍历编码二进制字符串，将当前位置的字符加入字符串片段的后面，比对解码本，以当前字符串片段为 key 获取 value。如果 value  不为空说明找到原始字节数据，将其转为字符串后加到整体字符串后面，重新创建一个字符串片段，使其为空继续遍历。如果 value 为空说明目前还没找到，继续遍历。最后循环结束后将 StringBuilder  对象转为 String 后返回。
 
       UML 顺序图如下所示：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image024.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image024.png" alt="img"  />
 
     - decode(byte[]) 将字节数组转为二进制字符串，然后再转为原始字符串返回
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image025.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image025.png" alt="img" style="width: 600px" />
 
 
 
@@ -429,7 +424,7 @@ UML 类图：
 
 UML 类图：
 
-<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image026.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image026.png" alt="img" style="width: 600px" />
 
 以下是 UML 图中有关数据和方法的详细说明：
 
@@ -439,7 +434,7 @@ UML 类图：
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image027.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />     
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image027.png" alt="img" style="width: 600px" />     
 
 ### 3.7 Main 类
 
@@ -447,7 +442,7 @@ UML 类图：
 
 UML 类图：
 
-<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image028.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image028.png" alt="img"  />
 以下是 UML 图中有关数据和方法的详细说明：
 
 - 成员变量
@@ -461,37 +456,37 @@ UML 类图：
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image029.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image029.png" alt="img" style="width: 400px" />
 
     - menu() 显示菜单，获取用户输入的选项，判断选项是否合法，不合法则继续显示菜单，同时提示用户正确的输入。
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image030.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />  
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image030.png" alt="img" style="width: 600px" />  
 
     - help() 打印帮助文档  compress(String, String) 根据相关路径，读取文件然后重新编码后再写入文件，除了用到正常的FileInputStream和FileOutputStream外，还要使用ObjectOutputStream完成对字节数组和编码本的序列化，完成压缩
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image031.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image031.png" alt="img"  />
 
     - decompress(String, String) 根据相关路径，读取文件获取编码本，需要使用 ObjectInputStream完成字节数组和编码本对象的反序列化，对照编码还内容后再写入文件，完成解压
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image032.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image032.png" alt="img"  />
 
     - compress() 对compress(String, String) 方法的重载，获取用户输入的源文件路径和压缩后的路径，然后进行压缩
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image033.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image033.png" alt="img"  />
 
     - decompress() 对decompress(String, String) 方法的重载，获取用户输入的压缩文件路径和解压后的路径，然后进行解压
 
       UML 顺序图如下：
 
-      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image034.png" alt="img" style="zoom:50%; display :block; margin :0 auto;" />
+      <img src="https://cdn.jsdelivr.net/gh/james-wangx/typora-images/2023/06/clip_image034.png" alt="img"  />
 
 
 
